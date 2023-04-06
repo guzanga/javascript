@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input id="letrinha" type="text" value="">
+        <button id="botao" type="submit">enviar</button>
+    </form>
+    <script>
+        var palavra = "igor"
+        var botao = document.getElementById("botao")
+        var input = document.getElementById("letrinha")
+        var letrai = "i"
+        var letrag = "g"
+        var letrao = "o"
+        var letrar = "r"  
+
+        botao.addEventListener("click", function() {
+            var letra = document.getElementById("letrinha")
+            var result = letra.value
+            console.log(result)
+        })
+
+        document.write("____")
+
+        if(result == letrai ){
+            document.write("i___")
+        }else if(input == letrag){
+            document.write("_g__")
+        }else if(input == letrao){
+            document.write("__o_")
+        }else if(input == letrar){
+            document.write("___r")
+        }else{
+        document.write("vc errou a letra")
+        }
+
+        
+    </script>
+</body>
+</html>
