@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input id="letrinha" type="text" value="">
+        <button id="botao" type="submit">enviar</button>
+    </form>
+    <div id="resultado"></div>
+    <script>
+        var palavra = "igor"
+        var botao = document.getElementById("botao")
+        var input = document.getElementById("letrinha")
+        var letrai = "i"
+        var letrag = "g"
+        var letrao = "o"
+        var letrar = "r"  
+
+        botao.addEventListener("click", function(event) {
+            event.preventDefault();
+            var letra = document.getElementById("letrinha")
+            var result = letra.value
+            var resultado = document.getElementById("resultado");
+
+            if(result == letrai ){
+                resultado.textContent = "i___";
+            } else if(result == letrag){
+                resultado.textContent = "ig__";
+            } else if(result == letrao){
+                resultado.textContent = "igo_";
+            } else if(result == letrar){
+                resultado.textContent = "igor";
+            } else{
+                resultado.textContent = "Você errou a letra";
+            }
+        })        
+    </script>
+</body>
+</html>
